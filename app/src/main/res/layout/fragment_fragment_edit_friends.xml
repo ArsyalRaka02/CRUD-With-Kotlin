@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Teman"
+            android:textSize="19sp"
+            android:layout_margin="16dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#000000"
+                android:inputType="text"
+                android:imeOptions="actionDone" />
+
+            <Spinner
+                android:layout_marginTop="16dp"
+                android:id="@+id/spinner_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/colorText"
+                android:entries="@array/gender_list"
+                android:background="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/et_Email"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#000000"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/et_Telp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telp."
+                android:textColorHint="#CCCCCC"
+                android:textColor="#000000"
+                android:inputType="number"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/et_Address"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Alamat"
+                android:textColorHint="#CCCCCC"
+                android:textColor="#000000"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:imeOptions="actionDone" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_marginTop="24dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="Update"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorText"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="38dp"
+                android:text="cancel"
+                android:textColor="@color/colorText"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
